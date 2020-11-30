@@ -1,38 +1,315 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body{
+  overflow-x: hidden;
+} */
+.main-Navbar{
+  background: rgb(55,16,179);
+background: linear-gradient(90deg, rgba(55,16,179,1) 1%, rgba(114,56,164,1) 52%, rgba(183,16,191,1) 100%);
+box-shadow: 0px 9px 5px -3px rgba(32, 37, 90, 0.75);
+
+}
+.navbar{
+  font-size: 25px;
+}
+.container{
+  margin-top: 69px;
+  margin-bottom: 60px;
+}
+.main-div{
+  background: rgb(55,16,179);
+background: linear-gradient(90deg, rgba(55,16,179,1) 1%, rgba(114,56,164,1) 52%, rgba(183,16,191,1) 100%);
+height: 92.8vh;
+height: 100%;
+padding-bottom: 140px;
+  /* justify-content: left; */
+}
+.main-heading-div{
+  margin-top: 160px;
+  /* width: 100%; */
+}
+.main-heading-div h1{
+  line-height: 3rem;
+  font-size: 90px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+.main-heading-div h2{
+  /* letter-spacing: 2px; */
+  font-size: 62px;
+  color: white;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif ;
+  text-align: center;
+}
+.bodypara{
+  margin-top: 30px;
+}
+.bodypara p{
+  color: white;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.bodybutton{
+  margin-top: 70px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bodybutton button{
+  padding: 14px;
+  background: linear-gradient(to bottom, #23ffdb, #1b5dbf);
+  border: none !important;
+  outline: none !important;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 40px;
+  color: white;
+  transition:0.2s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bodybutton button:hover{
+  box-shadow: 0px 9px 5px -1px rgba(32, 37, 90, 0.75);
+}
+.bodyimage{
+  position: relative;
+  margin-top: 50px;
+}
+.brain-abs{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+} 
+.border{
+  border: 2px solid red;
+  width: 200px;
+}
+.body2{
+  background: rgb(55,16,179);
+background: linear-gradient(10deg, rgb(151,3,190) 1%, rgb(145,4,191) 52%, rgb(72, 4, 88) 100%);
+overflow-x: hidden;
+}
+/* .section1{
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.uswriting{
+  margin-top: 200px;
+}
+.section2{
+  margin-top: 100px;
+} */
+.section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.uswriting{
+  font-size: 50px;
   color: white;
 }
+.section2{
+  margin-top: 40px;
+}
+.section2 p{
+  color: white;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+@media(max-width:992px){
+  .section2 p{
+    text-align: center;
+  }
+  .section3 p{
+    text-align: center;
+  }
+  .section2 h1{
+    text-align: center;
+  }
+  .section3 h1{
+    text-align: center;
+  }
+  .keys{
+    margin: 0px auto;
+  }
+}
+@media(max-width:460px){
+  .main-heading-div h1{
+    font-size: 60px;
 
-.App-link {
-  color: #61dafb;
+  }
+  .main-heading-div h2{
+    font-size: 50px;
+  }
+  
+}
+.keys{
+  word-spacing: 2rem;
+  width: 600px;
+  color: white;
+  font-size: 18px;
+font-weight: lighter;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section3{
+  margin-top: 100px;
+}
+.section3 p{
+  color: white;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+.section4{
+  margin-top: 60px;
+}
+.main__card{
+  background: rgb(55,16,179);
+background: linear-gradient(10deg, rgb(151,3,190) 1%, rgb(145,4,191) 52%, rgb(72, 4, 88) 100%);
+height: 100%;
+}
+.padding__card{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.card{
+  margin: 0px auto;
+  margin-bottom: 40px;
+  transition: 0.6s ease;
+}
+.card Button{
+  transition: 0.3s ease;
+}
+.card Button:hover{
+  background-color: rgb(151,3,190);
+}
+.card:hover{
+  box-shadow:   9px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  transform: scale(1.07);
+  cursor: pointer;
+} 
+.card-Heading1{
+  width: 200px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(69, 14, 85);
+  padding-top: 20px;
+  color: white;
+  box-shadow: 2px 13px 5px -3px rgba(0, 0, 0, 0.75);
+}
+.card-Heading2{
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+.reviws_main_div{
+background-color: rgb(79, 30, 128);
+height: 100%;
+padding-bottom: 50px;
+}
+.reviews__container{
+  margin-top: 100px;
+}
+ 
+.reviews-heading{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  margin: 0px auto;
+  background-color: rgb(50, 18, 82);
+  box-shadow: 2px 13px 5px -3px rgba(0, 0, 0, 0.75);
+}
+.reviewsbox{
+  display: flex;
+  background-color: white;
+  /* width: 100%; */
+  width: auto;
+  /* margin-bottom: 50px;   */
+  margin-top: 50px;
+  transition: 0.111s ease;
+  
+}
+.reviewsbox:hover{
+  box-shadow:   9px 7px 5px -3px rgba(0, 0, 0, 0.75) !important;
+  transform: scale(1.07) !important;
+  cursor: pointer;
+}
+.reviewspic{
+  display: flex;
+  flex: 0.4;
+  background-color: rgb(151, 98, 187);
+  justify-content: center;
+  /* height: 300px; */
+}
+.reviewstext{
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+.reviewsupper-div{
+  line-height: 1px !important;
+  padding-left: 19px;
+  padding-top: 1rem;
+}
+.reviewstext p{
+  font-style: oblique;
+  font-size: 14px;
+}
+.reviewslower-div{
+  line-height: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.reviewslower-div p{
+  font-style: oblique;
+  font-size: 22px;
+}
+.forpadding{
+  padding-top: 60px;
+}
+
+@media(max-width:420px){
+  .reviewsbox{
+    flex-direction: column;
+  } 
+}
+
+.main__email{
+  background-color: rgb(151,3,190);
+}
+.email{
+  padding-top: 50px;
+  text-align: center;
+  line-height: 2rem;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(187, 175, 175);
+  font-weight: initial;
+}
+.brain_cortex{
+  font-style: oblique;
+}
+.started{
+  color: white;
+  font-weight: 500;
+}
+.email-pic{
+  text-align: center;
+  padding-bottom: 100px;
+  transition: 0.5s ease-in-out;
+}
+.email-para{
+  padding-top: 30px;
+  color: white;
 }
